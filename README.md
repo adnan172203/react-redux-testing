@@ -1,21 +1,11 @@
 ## Live Demo
 
-# [Furnish](https://furnish-shop.herokuapp.com)
+# (https://furnish-shop.herokuapp.com)
 
 
 
-<img src="./demo/banner.PNG">
-<img src="./demo/shop.PNG">
-<img src="./demo/dashboard.PNG">
-<img src="./demo/cart.PNG">
 
-## What I have used?
 
-- Node.js
-- Express
-- React.js
-- Redux
-- MongoDB Atlas
 
 
 
