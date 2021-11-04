@@ -103,39 +103,6 @@ describe('login component', () => {
     );
     // screen.debug();
     const ermessage = screen.queryByTestId('error_message');
-console.log(ermessage);
     expect(ermessage).toBeInTheDocument();
   });
-
-  // test('submit when form inputs contain text', async () => {
-  //   const { getByTestId, findByText, getByPlaceholderText,getByRole,queryByText,getByText } = render(
-  //     <RootWrapper>
-  //       <Login history={history} />
-  //     </RootWrapper>
-  //   );
-
-  //   await act(async () => {
-  //     fireEvent.change(screen.getByPlaceholderText(/Email/i), {
-  //       target: {value: 'adnan@gmail.com'},
-  //     });
-
-  //     fireEvent.change(screen.getByPlaceholderText(/Password/i), {
-  //       target: {value: '123456'},
-  //     })
-  //   });
-
-  //   // await act (async () => {
-  //   //   fireEvent.submit(getByTestId('form'))
-  //   // });
-
-  // const loginButton = getByRole('button',{name:/login/i});
-  //   await act(async () => {
-  //     fireEvent.click(loginButton);
-  //   });
-
-  //   screen.debug();
-
-  //   expect(queryByText("Please provide an email and password")).not.toBeInTheDocument();
-
-  // });
 });
