@@ -1,0 +1,7 @@
+.admin_body {
+  background: #f9f9f9;
+  display: flex;
+  position: relative;
+  height: 100vw;
+  overflow: hidden;
+}

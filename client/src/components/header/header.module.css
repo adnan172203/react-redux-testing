@@ -1,0 +1,205 @@
+.main_header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+  position: relative;
+}
+
+.main_header nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.main_navbar ul a {
+  padding: 0.75rem;
+  text-decoration: none;
+  color: rgb(19, 18, 18);
+}
+
+.navbar_toggler {
+  display: none;
+  background: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #707070;
+}
+
+.navbar_toggler .bars {
+  padding: 0rem;
+  font-size: 1.5rem;
+  background: #fff;
+  border: none;
+  outline: none;
+}
+
+.dot_icon {
+  display: none;
+}
+
+.shop_essentials_icon {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.shop_essentials_icon a {
+  color: #000;
+  margin-bottom: 13px;
+}
+
+.shop_essentials_icon a:nth-child(2) {
+  margin-left: 16px;
+}
+
+.user_name {
+  border: 1px solid #a5a5a5;
+  border-radius: 4px;
+  padding: 5px;
+  color: #000;
+}
+
+.cart_item {
+  position: absolute;
+  right: 28%;
+}
+
+.cart_item {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  cursor: pointer;
+}
+
+.cartitem_length {
+  left: 48%;
+  top: -23%;
+  color: #ffffff;
+  font-weight: 500;
+  padding: 0px 7px;
+  background: #42b883;
+  font-size: 14px;
+  position: absolute;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  width: 27%;
+}
+
+.header_icon {
+  font-size: 28px;
+  color: #424242;
+}
+
+/* =============== responsive code ===================*/
+
+@media screen and (max-width: 900px) {
+  .main_header {
+    justify-content: center;
+  }
+
+  .shop_essentials_icon a:nth-child(2) {
+    margin-left: 0;
+  }
+
+  #show {
+    display: none;
+  }
+
+  .logo {
+    padding: 0 29%;
+  }
+
+  .main_header nav ul {
+    background: #fff;
+    text-align: center;
+    box-shadow: 0px 2px 15px 0px rgb(0 0 0 / 6%);
+    z-index: 2;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+
+  .main_navbar {
+    position: absolute;
+    top: 100%;
+    z-index: 2;
+    left: 10%;
+  }
+
+  .navbar_toggler {
+    float: right;
+    display: block;
+  }
+
+  #show_item {
+    display: none;
+  }
+
+  .shop_essentials_icon {
+    position: absolute;
+    background: #fff;
+    text-align: center;
+    margin-top: 2rem;
+    box-shadow: 0px 2px 15px 0px rgb(0 0 0 / 6%);
+    z-index: 2;
+    right: 11%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #e5e5e5;
+    padding: 2rem;
+  }
+
+  .main_navbar ul {
+    animation-name: slidenavAnimation;
+    animation-duration: 200ms;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    -webkit-animation-name: slidenavAnimation;
+    -webkit-animation-duration: 200ms;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-name: slidenavAnimation;
+    -moz-animation-duration: 200ms;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: ease-out;
+    -moz-animation-fill-mode: forwards;
+  }
+
+  @keyframes slidenavAnimation {
+    from {
+      margin-top: -30px;
+      opacity: 0;
+    }
+    to {
+      margin-top: 0;
+      opacity: 1;
+    }
+  }
+
+  .featured_products .featured_items,
+  .items_on_sale .on_sale_items {
+    margin-left: 5rem;
+  }
+
+  .dot_icon {
+    display: block;
+  }
+
+  .dot_icon {
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .cart_item {
+    display: none;
+  }
+  .logo {
+    padding: 0 20%;
+  }
+}

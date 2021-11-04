@@ -1,0 +1,160 @@
+.featured_products {
+  /* display: none; */
+}
+
+.featured_heading {
+  text-align: center;
+  color: #202020;
+  margin: 4rem 0;
+}
+
+.featured_heading_background {
+  width: 23%;
+  margin: 0 auto;
+  background: #fff;
+  padding: 0.5rem;
+  border: 1px solid #eee;
+  border-radius: 7px;
+  box-shadow: 0px 2px 15px 0px rgb(0 0 0 / 0.06);
+}
+
+.featured_items {
+  display: flex;
+  justify-content: center;
+}
+
+.column_two:nth-child(1) {
+  max-width: 23%;
+  margin-top: 26%;
+  margin-right: -23%;
+  z-index: 1;
+}
+
+.column_two:nth-child(1) h4,
+.column_two:nth-child(1) p {
+  margin-left: -41%;
+}
+
+.column_one {
+  flex-basis: 23%;
+  margin-right: 10px;
+}
+.column_two {
+  flex-basis: 49%;
+  text-align: center;
+}
+
+.one img,
+.two img,
+.three img {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 2px 15px 0px rgb(0 0 0 / 0.06);
+  border-radius: 10px;
+}
+
+.one {
+  margin-bottom: 34px;
+  height: 50%;
+  position: relative;
+}
+
+.column_one,
+.column_two {
+  position: relative;
+}
+
+.one_text {
+  text-align: center;
+  color: #6c6c6c;
+  position: absolute;
+  width: 100%;
+  top: 76%;
+}
+
+.two_text {
+  margin-top: -4rem;
+  text-align: center;
+  color: #6c6c6c;
+}
+
+.three_text {
+  color: #6c6c6c;
+  position: absolute;
+  top: 75%;
+  left: 38%;
+}
+
+.one_text h4,
+.two_text h4,
+.three_text h4 {
+  font-weight: 500;
+}
+
+.feature_price {
+  color: #42b883;
+}
+
+/* ================ Responsive =================== */
+
+@media screen and (max-width: 900px) {
+  .one_text h4,
+  .one_text p,
+  .three_text {
+    font-size: 2vw;
+  }
+
+  .featured_heading h1 {
+    font-size: 2.7vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .featured_heading_background {
+    width: 35%;
+  }
+
+  .featured_heading h1 {
+    font-size: 3.7vw;
+  }
+  .column_two {
+    flex-basis: 56%;
+  }
+
+  .column_one {
+    flex-basis: 27%;
+  }
+
+  .column_two:nth-child(1) {
+    max-width: 27%;
+    margin-top: 29%;
+    margin-right: -27%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .featured_items {
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+
+  .one {
+    margin-bottom: 7px;
+  }
+
+  .column_one {
+    margin-right: 0;
+    margin-top: 5px;
+  }
+
+  .column_two:nth-child(1) {
+    max-width: 100%;
+    margin-top: 0;
+  }
+
+  .one_text h4,
+  .one_text p,
+  .three_text {
+    font-size: 4.4vw;
+  }
+}

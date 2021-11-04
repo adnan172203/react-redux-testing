@@ -1,0 +1,12 @@
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  flex-basis: 80%;
+}
+
+@media screen and (max-width: 600px) {
+  .product {
+    justify-content: center;
+  }
+}

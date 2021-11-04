@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300;400&display=swap');
+* {
+
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'oswald', 'Montserrat', sans-serif;
+  background-color: #fcfcfc;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1170px;
+  display: block;
+  margin: auto;
+}
+
+
